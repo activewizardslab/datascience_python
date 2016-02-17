@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- meta info -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>Title deduplication</title>
+    <!-- Css files -->
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <!-- Js files -->
+    <script src="{{ url_for('static', filename='jquery-1.11.0.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='run.js') }}"></script>
+</head>
+
+<body>
+
+<div class="container" style="margin-top: 100px;">
+    <div class="row" style="background-color: #d9edf7; padding: 20px 10px; border: 1px solid #0088cc; border-radius: 10px">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="job_title">Enter Job Title:</label>
+                <input type="text" class="form-control" id="job_title">
+            </div>
+        </div>
+        <div class="col-md-1">
+            <button type="button" class="btn btn-lg btn-info" id="run" style="margin-top: 19px;">Run</button>
+        </div>
+        <div class="col-md-5">
+            <div class="form-group">
+                <label for="true_job_title">Results:</label>
+                <input type="text" class="form-control" id="true_job_title_1" readonly style="background-color: #ffffff">
+                <input type="text" class="form-control" id="true_job_title_2" readonly style="background-color: #ffffff">
+                <input type="text" class="form-control" id="true_job_title_3" readonly style="background-color: #ffffff">
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
