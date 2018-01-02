@@ -1,3 +1,3 @@
 Demo
  =============
-awo107.activewizards-demos.com
+http://awo107.activewizards-demos.com
